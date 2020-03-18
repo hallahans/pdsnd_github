@@ -247,8 +247,8 @@ def showdata(df):
                 else:
                     print("Sorry, something went wrong. Please type 'yes' or 'no'.")
             if show_more.lower() == 'yes':
-                head += 5
-                tail += 5
+                head += 10
+                tail += 10
                 print(df.iloc[head:tail])
             elif show_more.lower() == 'no':
                 break
