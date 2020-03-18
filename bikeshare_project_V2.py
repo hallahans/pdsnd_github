@@ -39,7 +39,7 @@ def get_filters():
     while month not in ['all', 'january','february','march', 'april', 'may', 'june']:
         month = str(input("Which month would you like to explore? Type either 'all' or the respective month from 'January' to 'June'. ")).lower()
         if month not in ['all', 'january','february','march', 'april', 'may' ,'june']:
-            print('This did not work. Try again. \n ')
+            print('This did not work. Please try again. \n ')
 
 
 
