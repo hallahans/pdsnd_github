@@ -39,7 +39,7 @@ def get_filters():
     while month not in ['all', 'january','february','march', 'april', 'may', 'june']:
         month = str(input("Which month would you like to explore? Type either 'all' or the respective month from 'January' to 'June'. ")).lower()
         if month not in ['all', 'january','february','march', 'april', 'may' ,'june']:
-            print('This did not work. Try again. \n ')
+            print('This did not work. Please try again. \n ')
 
 
 
@@ -247,8 +247,8 @@ def showdata(df):
                 else:
                     print("Sorry, something went wrong. Please type 'yes' or 'no'.")
             if show_more.lower() == 'yes':
-                head += 5
-                tail += 5
+                head += 10
+                tail += 10
                 print(df.iloc[head:tail])
             elif show_more.lower() == 'no':
                 break
